@@ -1,0 +1,33 @@
+from typing import List, Dict, Any
+from fetchers.base import BaseFetcher
+
+class DummyFetcher(BaseFetcher):
+	def get_daily_chart(self) -> List[Dict[str,Any]]:
+		return [
+			{
+	                	"songId": "1001",
+	                	"songName": "Resonant Stillness",
+	                	"artistName": "Prima",
+	                	"albumName": "Motion Studies",
+	                	"rank": 1,
+	                	"chartDate": "2025-12-13"
+	            	},
+	            	{
+	                	"songId": "1002",
+	                	"songName": "Structured Intuition",
+	                	"artistName": "Prima",
+	                	"albumName": "Motion Studies",
+	                	"rank": 2,
+	                	"chartDate": "2025-12-13"
+	            	},
+	            	{
+	                	"songId": "1003",
+	                	"songName": "Quiet Recognition",
+	                	"artistName": "Prima",
+	                	"albumName": "Motion Studies",
+	                	"rank": 3,
+	                	"chartDate": "2025-12-13"
+	            	}
+
+
+			]
